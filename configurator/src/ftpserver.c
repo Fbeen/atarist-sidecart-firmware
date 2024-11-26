@@ -50,6 +50,13 @@ __uint16_t ftp_server()
                 // Back to main menu
                 return 0; // 0 return to menu, no ask
             }
+            if ((key == 'S') || (key == 's'))
+            {
+                send_sync_command(FTPSERVER, NULL, 0, RTC_WAIT_TIME, TRUE);
+                __uint16_t err = read_config();
+
+                display = TRUE;
+            }
         }
     }
 }

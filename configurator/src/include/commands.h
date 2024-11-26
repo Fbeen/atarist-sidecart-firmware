@@ -29,4 +29,6 @@
 #define BOOT_GEMDRIVE 25        // Boot the GEMDRIVE emulator
 #define REBOOT 26               // Reboot the device
 
+#define FTPSERVER 30            // Start the FTP server
+
 #endif // COMMANDS_H_
